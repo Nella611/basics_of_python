@@ -15,6 +15,5 @@ while True:
         break
     else:
         distance_result += distance_result / 100 * 10
-        print(distance_result)
         day_num += 1
 print(f'Бегуну понадобится {day_num} дней')
