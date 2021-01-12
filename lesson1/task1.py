@@ -10,5 +10,5 @@ my_age = 35
 user_name = input('Введите ваше имя: ')
 user_age = int(input('Сколько вам лет? '))
 
-print(f'Привет,{user_name}! Меня зовут {my_name}, мне {my_age} лет')
+print(f'Привет, {user_name}! Меня зовут {my_name}, мне {my_age} лет')
 print(f'На двоих нам {my_age + user_age} лет')
