@@ -5,7 +5,7 @@
 При решении задания необходимо обойтись без встроенной функции возведения числа в степень.
 """
 
-
+# с использованием **
 def my_func(x, y):
     if x <= 0:
         print('x должно быть действительное положительное число!')
@@ -15,7 +15,26 @@ def my_func(x, y):
         return x**y
 
 
-print(my_func(2, -3))
+print(my_func(2, -4))
 print(my_func(0, 3))
 print(my_func(-2, -3))
 print(my_func(2, -3.2))
+
+
+#без использования **
+def my_func2(x, y):
+    if x <= 0:
+        print('x должно быть действительное положительное число!')
+    elif y >= 0 or y is not int(y):
+        print('y должно быть целое отрицательное число!')
+    else:
+        result = x
+        for i in range(y, -1):
+            result = result * x
+        return 1 / result
+
+
+print(my_func2(2, -4))
+print(my_func2(0, 3))
+print(my_func2(-2, -3))
+print(my_func2(2, -3.2))
