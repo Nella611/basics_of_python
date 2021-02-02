@@ -57,8 +57,8 @@ m4 = Matrix(d)
 print(m1)
 print(m2)
 print(m3)
-print(m3.__add__(m1))
-print(m3.__add__(m4))
+print(m3 + m1)
+print(m3 + m4)
 
 
 
